@@ -1,4 +1,23 @@
+@import '../../../../styles/typography.scss';
+@import '../../../../styles/adaptive.scss';
+
 .header {
-  background: var(--green);
-  height: 70px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21.5px 80px;
+  background: var(--black-color);
+
+  @include from-large {
+    padding: 21.5px 30px;
+  }
+
+  @include from-medium {
+    padding: 5px 20px;
+  }
+
+  &__icon {
+    cursor: pointer;
+  }
 }

@@ -1,0 +1,66 @@
+@import './../../../../styles/typography';
+@import './../../../../styles/adaptive';
+
+.information {
+  display: flex;
+  flex-direction: column;
+  padding: 91px 0 0 81px;
+  gap: 22px;
+  max-width: 693px;
+  color: var(--white-color);
+
+  @include from-large {
+    max-width: 411px;
+    padding-top: 100px;
+    padding-left: 30px;
+  }
+
+  @include from-medium {
+    max-width: 294px;
+    margin: 0 auto;
+    padding-top: 250px;
+    align-items: center;
+  }
+
+  &__title {
+    @include text-extra-lg;
+
+    @include from-large {
+      @include text-extra-lg-48;
+    }
+
+    @include from-medium {
+      @include text-extra-md-36;
+    }
+
+    &__pink {
+      color: var(--pink-color);
+    }
+  }
+
+  &__subtitle {
+    @include text-extra-md;
+
+    @include from-large {
+      @include text-extra-sm;
+    }
+
+    @include from-medium {
+      @include text-extra-xs-16;
+    }
+
+    &__green {
+      color: var(--light-green-color);
+    }
+  }
+
+  &__button {
+    width: 192px;
+
+    @include from-medium {
+      width: 161px;
+      padding: 6.5px 15px;
+      @include text-xs-16;
+    }
+  }
+}

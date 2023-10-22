@@ -1,0 +1,20 @@
+@import '../../../../../../styles/typography.scss';
+@import '../../../../../../styles/adaptive.scss';
+
+.navigation {
+  display: flex;
+  gap: 30px;
+
+  &__item {
+    @include text-xs;
+    color: var(--white-color);
+    cursor: pointer;
+
+    &:hover {
+      background: linear-gradient(98.25deg, #EBFF00 18.56%, #FF70D9 76.02%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+}

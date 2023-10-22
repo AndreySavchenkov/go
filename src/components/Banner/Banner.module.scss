@@ -1,0 +1,19 @@
+@import '../../styles/adaptive';
+
+.banner {
+  height: 490px;
+  background:url("../../assets/images/earth.png") 97% 89% no-repeat, url("../../assets/images/background.jpg");
+  background-size: auto, cover;
+
+  @include from-large {
+    height: 420px;
+    background:url("../../assets/images/earth.png") 113% 89% no-repeat, url("../../assets/images/background.jpg");
+    background-size: auto, cover;
+  }
+
+  @include from-medium {
+    height: 451px;
+    background:url("../../assets/images/earth.png") 50% -270% no-repeat, url("../../assets/images/background.jpg");
+    background-size: auto, cover;
+  }
+}

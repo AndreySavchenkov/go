@@ -1,0 +1,56 @@
+@import '../../styles/typography';
+@import '../../styles/adaptive';
+
+.info {
+  padding: 0 82px;
+
+  @include from-large {
+    padding: 0 30px;
+  }
+
+  @include from-medium {
+    padding: 0 20px;
+  }
+
+  &__title {
+    @include text-extra-md;
+    color: var(--white-color);
+
+    @include from-large {
+      @include text-extra-sm-24;
+    }
+
+    @include from-medium {
+      @include text-extra-xs;
+    }
+  }
+
+  &__text {
+    margin: 17px 0;
+    @include text-sm-20;
+    color: var(--white-color);
+
+    @include from-large {
+      @include text-xs-16;
+      margin: 13px 0 20px;
+    }
+
+    @include from-medium {
+      @include text-xs-14;
+      margin: 20px 0;
+    }
+  }
+
+  &__button {
+    margin-bottom: 60px;
+
+    @include from-large {
+      @include text-xs-16;
+    }
+
+    @include from-medium {
+      @include text-xs-14;
+      margin-bottom: 53px;
+    }
+  }
+}

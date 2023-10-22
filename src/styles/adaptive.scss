@@ -1,0 +1,17 @@
+@mixin from-large {
+  @media (max-width: 1248px) {
+    @content;
+  }
+}
+
+@mixin from-medium {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin from-small {
+  @media (max-width: 360px) {
+    @content;
+  }
+}

@@ -1,0 +1,59 @@
+@import '../../styles/typography';
+@import '../../styles/adaptive';
+
+.offers {
+  padding: 58px 80px 62px;
+
+  @include from-large {
+    padding: 55px 30px;
+  }
+
+  @include from-medium {
+    padding: 50px 20px;
+  }
+
+  &__title {
+    @include text-extra-md;
+    color: var(--white-color);
+
+    @include from-large {
+      @include text-extra-sm-24;
+    }
+
+    @include from-medium {
+      @include text-extra-xs;
+    }
+  }
+
+    &__container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      gap: 40px;
+
+      @include from-large {
+        gap: 30px;
+      }
+
+      > div {
+        width: 41%;
+
+        @include from-large {
+          width: 339px;
+          height: 350px;
+        }
+
+        &:first-child,
+        &:last-child {
+          width: 100%;
+
+          @include from-large {
+            width: 339px;
+            height: 350px;
+          }
+        }
+      }
+    }
+}
+

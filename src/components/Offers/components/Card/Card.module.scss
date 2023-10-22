@@ -1,0 +1,53 @@
+@import '../../../../styles/typography';
+@import '../../../../styles/adaptive';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 35px;
+  border-radius: 10px;
+
+  @include from-large {
+    padding: 25px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 60%;
+
+    @include from-large {
+      width: 280px;
+    }
+  }
+
+  &__title {
+    @include text-extra-lg-74;
+    color: var(--white-color);
+
+    @include from-large {
+      @include text-extra-lg-40;
+    }
+  }
+
+  &__subtitle {
+    @include text-extra-sm-26;
+    color: var(--white-color);
+
+    @include from-large {
+      @include text-extra-xs-16;
+    }
+  }
+
+  &__button {
+    width: 196px;
+
+    @include from-large {
+      width: 161px;
+      padding: 6.5px 15px;
+      @include text-xs-16;
+    }
+  }
+}
